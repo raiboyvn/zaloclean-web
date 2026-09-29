@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const downloadHref = "https://github.com/raiboyvn/zaloclean/releases/download/v1.0.0-beta.3/Zalo.Clean.Setup.1.0.0-beta.3.exe";
+const downloadHref = "https://github.com/raiboyvn/zaloclean-releases/releases/download/v1.0.0-beta.3/Zalo.Clean.Setup.1.0.0-beta.3.exe";
 
 const benefits = [
   ["Quét nhanh", "Nhanh chóng tìm ra dữ liệu Zalo PC đang chiếm nhiều dung lượng."],
