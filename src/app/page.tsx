@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+const downloadHref = "https://github.com/raiboyvn/zaloclean/releases/download/v1.0.0-beta.3/Zalo.Clean.Setup.1.0.0-beta.3.exe";
+
 const benefits = [
   ["Quét nhanh", "Nhanh chóng tìm ra dữ liệu Zalo PC đang chiếm nhiều dung lượng."],
   ["Xem trước trước khi dọn", "Bạn luôn biết rõ từng nhóm dữ liệu trước khi quyết định dọn."],
@@ -19,9 +21,8 @@ const faqs = [
   ["Sau khi kích hoạt có dùng offline được không?", "Có. Sau khi kích hoạt thành công, Zalo Clean có thể tiếp tục dùng offline."],
 ];
 
-function Button({ children, href, secondary = false, unavailable = false }: { children: React.ReactNode; href: string; secondary?: boolean; unavailable?: boolean }) {
+function Button({ children, href, secondary = false }: { children: React.ReactNode; href: string; secondary?: boolean }) {
   const className = secondary ? "button button-secondary" : "button";
-  if (unavailable) return <span className={className} aria-disabled="true" title="Bản tải đang được chuẩn bị">{children}</span>;
   return <a className={className} href={href}>{children}</a>;
 }
 
@@ -47,7 +48,7 @@ export default function Home() {
       <header className="site-header">
         <a className="brand" href="#dau-trang" aria-label="Zalo Clean - đầu trang">Zalo Clean</a>
         <nav aria-label="Điều hướng chính"><a href="#bang-gia">Bảng giá</a><a href="#an-toan">An toàn</a><a href="#hoi-dap">Hỏi đáp</a></nav>
-        <Button href="#" unavailable>Tải ứng dụng</Button>
+        <Button href={downloadHref}>Tải ứng dụng</Button>
       </header>
 
       <section className="hero" id="dau-trang">
@@ -55,7 +56,7 @@ export default function Home() {
         <p className="eyebrow">ZALO CLEAN DÀNH CHO WINDOWS</p>
         <h1>Dọn Zalo PC gọn hơn.<br />An toàn hơn.</h1>
         <p className="lead">Quét, xem trước và dọn dữ liệu Zalo PC chỉ trong vài phút.</p>
-        <div className="button-row"><Button href="#" unavailable>Tải Zalo Clean</Button><Button href="#bang-gia" secondary>Xem bảng giá</Button></div>
+        <div className="button-row"><Button href={downloadHref}>Tải Zalo Clean</Button><Button href="#bang-gia" secondary>Xem bảng giá</Button></div>
         <p className="windows-note">Dành cho Windows</p>
         <p className="download-meta">Phiên bản: 1.0.0-beta.3 <span>•</span> Windows x64 <span>•</span> ~112 MB</p>
         <AppPreview />
@@ -107,10 +108,10 @@ export default function Home() {
       </section>
 
       <section className="section final-cta">
-        <p className="eyebrow">SẴN SÀNG CHO MỘT CHIẾC MÁY GỌN HƠN?</p><h2>Dọn Zalo PC nhẹ nhàng hơn,<br />ngay hôm nay.</h2><p>Quét trước, xem trước, rồi mới dọn — theo cách bạn thấy yên tâm.</p><div className="button-row"><Button href="#" unavailable>Tải Zalo Clean</Button><Button href="#bang-gia" secondary>Mua license</Button></div>
+        <p className="eyebrow">SẴN SÀNG CHO MỘT CHIẾC MÁY GỌN HƠN?</p><h2>Dọn Zalo PC nhẹ nhàng hơn,<br />ngay hôm nay.</h2><p>Quét trước, xem trước, rồi mới dọn — theo cách bạn thấy yên tâm.</p><div className="button-row"><Button href={downloadHref}>Tải Zalo Clean</Button><Button href="#bang-gia" secondary>Mua license</Button></div>
       </section>
 
-      <footer><div><a className="brand footer-brand" href="#dau-trang">Zalo Clean</a><p>Tiện ích dọn dữ liệu Zalo PC đơn giản, riêng tư.</p></div><div className="footer-links"><span className="footer-download" aria-disabled="true" title="Bản tải đang được chuẩn bị">Tải xuống</span><a href="#bang-gia">Bảng giá</a><a href="#huong-dan">Hướng dẫn</a><a href="#an-toan">Quyền riêng tư</a><a href="#hoi-dap">Hỗ trợ</a></div><p className="copyright">© 2026 Zalo Clean. Mọi quyền được bảo lưu.</p></footer>
+      <footer><div><a className="brand footer-brand" href="#dau-trang">Zalo Clean</a><p>Tiện ích dọn dữ liệu Zalo PC đơn giản, riêng tư.</p></div><div className="footer-links"><a href={downloadHref}>Tải xuống</a><a href="#bang-gia">Bảng giá</a><a href="#huong-dan">Hướng dẫn</a><a href="#an-toan">Quyền riêng tư</a><a href="#hoi-dap">Hỗ trợ</a></div><p className="copyright">© 2026 Zalo Clean. Mọi quyền được bảo lưu.</p></footer>
     </main>
   );
 }

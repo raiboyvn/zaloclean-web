@@ -16,8 +16,6 @@ nav a:hover,.footer-links a:hover { color:var(--cyan-dark); }
 .button:hover { transform:translateY(-2px); background:var(--cyan-dark); }
 .button-secondary { color:var(--navy); background:#fff; border-color:var(--line); box-shadow:none; }
 .button-secondary:hover { background:var(--surface); }
-.button[aria-disabled="true"],.footer-download[aria-disabled="true"] { cursor:not-allowed; opacity:.76; }
-.button[aria-disabled="true"] { box-shadow:none; }
 .hero { min-height:1030px; overflow:hidden; position:relative; padding:94px 24px 0; text-align:center; background:linear-gradient(115deg,#fff 8%,#fbfdff 52%,#edfafd 100%); }
 .hero-glow { position:absolute; inset:0; pointer-events:none; background:radial-gradient(circle at 50% 26%,rgba(22,185,212,.08),transparent 30%); }
 .hero > *:not(.hero-glow) { position:relative; }
