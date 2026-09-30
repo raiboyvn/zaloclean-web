@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const downloadHref = "https://github.com/raiboyvn/zaloclean-releases/releases/download/v1.0.0-beta.3/Zalo.Clean.Setup.1.0.0-beta.3.exe";
+const downloadHref = "https://github.com/raiboyvn/zaloclean-releases/releases/download/v1.0.0-beta.4/Zalo.Clean.Setup.1.0.0-beta.4.exe";
 
 const benefits = [
   ["Quét nhanh", "Nhanh chóng tìm ra dữ liệu Zalo PC đang chiếm nhiều dung lượng."],
@@ -32,7 +32,7 @@ function AppPreview() {
       <Image
         className="app-screenshot"
         src="/images/zalo-clean-beta3.png"
-        alt="Giao diện thật của Zalo Clean beta.3 trên Windows"
+        alt="Giao diện thật của Zalo Clean beta.4 trên Windows"
         width={1086}
         height={713}
         priority
@@ -58,7 +58,7 @@ export default function Home() {
         <p className="lead">Quét, xem trước và dọn dữ liệu Zalo PC chỉ trong vài phút.</p>
         <div className="button-row"><Button href={downloadHref}>Tải Zalo Clean</Button><Button href="#bang-gia" secondary>Xem bảng giá</Button></div>
         <p className="windows-note">Dành cho Windows</p>
-        <p className="download-meta">Phiên bản: 1.0.0-beta.3 <span>•</span> Windows x64 <span>•</span> ~112 MB</p>
+        <p className="download-meta">Phiên bản: 1.0.0-beta.4 <span>•</span> Windows x64 <span>•</span> ~112 MB</p>
         <AppPreview />
       </section>
 
