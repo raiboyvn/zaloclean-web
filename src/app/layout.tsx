@@ -58,8 +58,8 @@ const jsonLd = {
       "operatingSystem": "Windows 10, Windows 11 (64-bit)",
       "applicationCategory": "UtilitiesApplication",
       "fileSize": "112MB",
-      "softwareVersion": "1.0.0-beta.5",
-      "downloadUrl": "https://github.com/raiboyvn/zaloclean-releases/releases/download/v1.0.0-beta.5/Zalo.Clean.Setup.1.0.0-beta.5.exe",
+      "softwareVersion": "1.0.0-beta.6",
+      "downloadUrl": "https://github.com/raiboyvn/zaloclean-releases/releases/download/v1.0.0-beta.6/Zalo.Clean.Setup.1.0.0-beta.6.exe",
       "offers": {
         "@type": "AggregateOffer",
         "priceCurrency": "VND",

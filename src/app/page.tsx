@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 const downloadHref =
-  "https://github.com/raiboyvn/zaloclean-releases/releases/download/v1.0.0-beta.5/Zalo.Clean.Setup.1.0.0-beta.5.exe";
+  "https://github.com/raiboyvn/zaloclean-releases/releases/download/v1.0.0-beta.6/Zalo.Clean.Setup.1.0.0-beta.6.exe";
 
 const faqs = [
   {
@@ -275,7 +275,7 @@ export default function Home() {
                     height={16}
                   />
                   <span className="text-code-stat text-on-surface font-medium">
-                    Zalo Clean v1.0.0-beta.5 — Quét dọn thông minh
+                    Zalo Clean v1.0.0-beta.6 — Quét dọn thông minh
                   </span>
                 </div>
                 <div className="flex items-center gap-1 -mr-2 pointer-events-none select-none opacity-60">
@@ -978,7 +978,7 @@ export default function Home() {
                 Tiện ích tối ưu hóa độc lập dành cho Windows, hỗ trợ quản lý và dọn dẹp dữ liệu lưu trữ cục bộ của Zalo PC an toàn và thông minh.
               </p>
               <div className="text-code-stat text-outline">
-                Phiên bản phát hành: 1.0.0-beta.5 (Build 2026.04)
+                Phiên bản phát hành: 1.0.0-beta.6 (Build 2026.04)
               </div>
             </div>
 
