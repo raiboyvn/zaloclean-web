@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 
 const downloadHref =
-  "https://github.com/raiboyvn/zaloclean-releases/releases/download/v1.0.0-beta.6/Zalo.Clean.Setup.1.0.0-beta.6.exe";
+  "https://github.com/raiboyvn/zaloclean-releases/releases/download/v1.0.0-beta.7/Zalo.Clean.Setup.1.0.0-beta.7.exe";
 
 const faqs = [
   {
@@ -128,7 +128,7 @@ export default function Home() {
               href={downloadHref}
             >
               <span className="material-symbols-outlined text-[18px]">download</span>
-              <span>Tải ứng dụng (Miễn phí)</span>
+              <span>Tải ứng dụng</span>
             </a>
             {/* Hamburger button (Mobile only) */}
             <button
@@ -193,7 +193,7 @@ export default function Home() {
               href={downloadHref}
               onClick={() => setMobileMenuOpen(false)}
             >
-              Tải cho Windows (x64)
+              Tải ứng dụng
             </a>
           </div>
         )}
@@ -212,7 +212,7 @@ export default function Home() {
             <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full bg-surface-container-lowest border border-outline-variant/40 shadow-xs max-w-full">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse shrink-0"></span>
               <span className="text-[11px] sm:text-label-md text-primary font-semibold tracking-wide">
-                ZALO CLEAN DÀNH CHO WINDOWS • BẢN 1.0.0-BETA.5
+                ZALO CLEAN DÀNH CHO WINDOWS • BẢN 1.0.0-beta.7
               </span>
             </div>
             {/* Headline */}
@@ -275,7 +275,7 @@ export default function Home() {
                     height={16}
                   />
                   <span className="text-code-stat text-on-surface font-medium">
-                    Zalo Clean v1.0.0-beta.6 — Quét dọn thông minh
+                    Zalo Clean v1.0.0-beta.7 — Quét dọn thông minh
                   </span>
                 </div>
                 <div className="flex items-center gap-1 -mr-2 pointer-events-none select-none opacity-60">
@@ -497,7 +497,7 @@ export default function Home() {
               Quy trình 3 bước minh bạch
             </h2>
             <p className="text-body-md text-on-surface-variant">
-              Không câu chữ mập mờ, không tính năng ngầm. Người dùng toàn quyền kiểm soát từng tệp tin.
+              Quét dung lượng, xem kết quả theo nhóm dữ liệu và chọn chế độ dọn phù hợp. Bạn xác nhận trước khi bắt đầu dọn.
             </p>
           </div>
 
@@ -510,7 +510,7 @@ export default function Home() {
               </div>
               <h3 className="text-headline-sm text-on-surface mb-2">Quét dung lượng đang chiếm</h3>
               <p className="text-body-md text-on-surface-variant">
-                Tự động định vị thư mục dữ liệu Zalo PC mà không làm gián đoạn ứng dụng đang chạy. Tốc độ quét cực nhanh với thuật toán đa luồng.
+                Kiểm tra dung lượng dữ liệu Zalo PC trên máy.
               </p>
             </div>
             {/* Step 2 */}
@@ -520,7 +520,7 @@ export default function Home() {
               </div>
               <h3 className="text-headline-sm text-on-surface mb-2">Xem trước theo nhóm dữ liệu</h3>
               <p className="text-body-md text-on-surface-variant">
-                Bộ lọc thông minh lọc nhanh file nặng (&gt;50MB, &gt;100MB), phân loại theo hình ảnh, video, tài liệu hoặc mốc thời gian lưu trữ.
+                Chọn ảnh, video và âm thanh cùng mốc thời gian giữ lại; xem dung lượng ước tính có thể dọn.
               </p>
             </div>
             {/* Step 3 */}
@@ -530,7 +530,7 @@ export default function Home() {
               </div>
               <h3 className="text-headline-sm text-on-surface mb-2">Chọn dọn nhanh hoặc an toàn</h3>
               <p className="text-body-md text-on-surface-variant">
-                Minh bạch từng byte dung lượng được giải phóng theo thời gian thực. Tùy chọn an toàn đưa vào Thùng rác để yên tâm hoàn toàn.
+                Dọn nhanh để xóa vĩnh viễn hoặc Dọn an toàn để chuyển media đã chọn vào Thùng rác Windows.
               </p>
             </div>
           </div>
@@ -693,10 +693,6 @@ export default function Home() {
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-primary text-[18px]">check</span>
-                    <span>Hỗ trợ kỹ thuật qua email/Zalo</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-primary text-[18px]">check</span>
                     <span>Dùng offline sau khi kích hoạt license</span>
                   </li>
                 </ul>
@@ -712,7 +708,7 @@ export default function Home() {
             {/* Tier 2 (Featured / Most Popular) */}
             <div className="bg-inverse-surface text-inverse-on-surface rounded-2xl p-6 md:p-8 border-2 border-primary shadow-xl relative flex flex-col justify-between transform md:-translate-y-2">
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-on-primary text-[11px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider shadow-sm">
-                PHỔ BIẾN NHẤT
+                Gói 3 máy
               </div>
               <div>
                 <div className="text-label-lg text-inverse-primary font-medium">Gia đình &amp; Công việc</div>
@@ -728,11 +724,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-inverse-primary text-[18px]">check</span>
-                    <span>Tiết kiệm chi phí so với mua lẻ</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-inverse-primary text-[18px]">check</span>
-                    <span>Được hỗ trợ kích hoạt ưu tiên</span>
+                    <span>Phù hợp khi sử dụng trên 3 máy tính</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-inverse-primary text-[18px]">check</span>
@@ -744,7 +736,7 @@ export default function Home() {
                 className="mt-8 block text-center py-3 px-4 rounded-lg bg-primary hover:bg-tertiary-container text-on-primary text-label-md font-bold shadow-md shadow-primary/30 transition-colors"
                 href="#thanh-toan"
               >
-                Mua gói 3 máy (Khuyên dùng)
+                Mua bản quyền 3 máy
               </a>
             </div>
 
@@ -765,10 +757,6 @@ export default function Home() {
                   <li className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-primary text-[18px]">check</span>
                     <span>Phù hợp văn phòng kế toán, studio, team dự án</span>
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-primary text-[18px]">check</span>
-                    <span>Hỗ trợ xuất mã license gộp tiện lợi</span>
                   </li>
                   <li className="flex items-center gap-2">
                     <span className="material-symbols-outlined text-primary text-[18px]">check</span>
@@ -978,7 +966,7 @@ export default function Home() {
                 Tiện ích tối ưu hóa độc lập dành cho Windows, hỗ trợ quản lý và dọn dẹp dữ liệu lưu trữ cục bộ của Zalo PC an toàn và thông minh.
               </p>
               <div className="text-code-stat text-outline">
-                Phiên bản phát hành: 1.0.0-beta.6 (Build 2026.04)
+                Phiên bản phát hành: 1.0.0-beta.7 (Build 2026.04)
               </div>
             </div>
 
