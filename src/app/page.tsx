@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const downloadHref =
   "https://github.com/raiboyvn/zaloclean-releases/releases/download/v1.0.0-beta.7/Zalo.Clean.Setup.1.0.0-beta.7.exe";
@@ -76,7 +77,7 @@ export default function Home() {
           </a>
 
           {/* Navigation Links */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-7">
             <a
               className="text-body-md text-primary font-semibold border-b-2 border-primary pb-1 transition-colors"
               href="#features"
@@ -101,6 +102,15 @@ export default function Home() {
             >
               Bảng giá
             </a>
+            <Link
+              className="text-body-md text-on-surface-variant hover:text-primary transition-colors inline-flex items-center gap-1.5"
+              href="/innovation/ai-centrel/"
+            >
+              <span>AI Centrel</span>
+              <span className="text-[10px] font-bold px-1.5 py-0.2 rounded bg-primary/10 text-primary border border-primary/20">
+                R&amp;D
+              </span>
+            </Link>
             <a
               className="text-body-md text-on-surface-variant hover:text-primary transition-colors"
               href="#security"
@@ -174,6 +184,21 @@ export default function Home() {
             >
               Bảng giá
             </a>
+            <div className="pt-2 border-t border-outline-variant/20">
+              <div className="text-[11px] font-bold text-outline uppercase tracking-wider px-1 pb-1">
+                Đổi mới sáng tạo
+              </div>
+              <Link
+                className="text-primary font-semibold text-body-md py-1.5 px-1 flex items-center justify-between"
+                href="/innovation/ai-centrel/"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <span>AI Centrel</span>
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">
+                  R&amp;D
+                </span>
+              </Link>
+            </div>
             <a
               className="text-on-surface-variant font-medium text-body-md py-1.5"
               href="#security"
@@ -979,6 +1004,12 @@ export default function Home() {
                 <li><a className="hover:text-primary transition-colors" href="#features">Tính năng chính</a></li>
                 <li><a className="hover:text-primary transition-colors" href="#workflow">Quy trình dọn dẹp</a></li>
                 <li><a className="hover:text-primary transition-colors" href="#pricing">Bảng giá bản quyền</a></li>
+                <li>
+                  <Link className="hover:text-primary transition-colors flex items-center gap-1.5" href="/innovation/ai-centrel/">
+                    <span>AI Centrel</span>
+                    <span className="text-[10px] px-1.5 py-0.2 rounded bg-tertiary-fixed/30 text-primary font-semibold">R&amp;D</span>
+                  </Link>
+                </li>
                 <li><a className="hover:text-primary transition-colors" href={downloadHref}>Tải bản Windows x64</a></li>
               </ul>
             </div>
