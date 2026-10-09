@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const downloadHref =
-  "https://github.com/raiboyvn/zaloclean-releases/releases/download/v1.0.0-beta.7/Zalo.Clean.Setup.1.0.0-beta.7.exe";
+  "/download";
 
 const faqs = [
   {
