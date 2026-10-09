@@ -1011,6 +1011,7 @@ export default function Home() {
                   </Link>
                 </li>
                 <li><a className="hover:text-primary transition-colors" href={downloadHref}>Tải bản Windows x64</a></li>
+                <li><Link className="hover:text-primary transition-colors" href="/download">Hướng dẫn tải và sử dụng</Link></li>
               </ul>
             </div>
 
