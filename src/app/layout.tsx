@@ -11,16 +11,16 @@ const beVietnamPro = Be_Vietnam_Pro({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://zaloclean.raiboyvn.shop"),
+  metadataBase: new URL("https://zaloclean.com"),
   title: "Zalo Clean — Dọn Zalo PC gọn hơn, an toàn hơn",
   description: "Tiện ích quét, xem trước và dọn dữ liệu Zalo PC trực tiếp trên máy tính Windows. Bảo vệ tin nhắn, giải phóng dung lượng ổ C.",
   alternates: {
-    canonical: "https://zaloclean.raiboyvn.shop/",
+    canonical: "https://zaloclean.com/",
   },
   openGraph: {
     title: "Zalo Clean — Dọn Zalo PC gọn hơn, an toàn hơn",
     description: "Tiện ích quét, xem trước và dọn dữ liệu Zalo PC trực tiếp trên máy tính Windows. Bản quyền trọn đời chỉ từ 29.000đ.",
-    url: "https://zaloclean.raiboyvn.shop/",
+    url: "https://zaloclean.com/",
     siteName: "Zalo Clean",
     locale: "vi_VN",
     type: "website",

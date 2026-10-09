@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://zaloclean.raiboyvn.shop/sitemap.xml
+Sitemap: https://zaloclean.com/sitemap.xml

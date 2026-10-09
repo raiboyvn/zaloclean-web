@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   description:
     "Khám phá AI Centrel, sáng kiến nghiên cứu trí tuệ nhân tạo đa Agent, quy trình AI linh hoạt và công nghệ cộng tác thông minh.",
   alternates: {
-    canonical: "https://zaloclean.raiboyvn.shop/innovation/ai-centrel/",
+    canonical: "https://zaloclean.com/innovation/ai-centrel/",
   },
   openGraph: {
     title: "AI Centrel — AI Innovation & Research | Zalo Clean",
     description:
       "Khám phá AI Centrel, sáng kiến nghiên cứu trí tuệ nhân tạo đa Agent, quy trình AI linh hoạt và công nghệ cộng tác thông minh.",
-    url: "https://zaloclean.raiboyvn.shop/innovation/ai-centrel/",
+    url: "https://zaloclean.com/innovation/ai-centrel/",
     siteName: "Zalo Clean",
     locale: "vi_VN",
     type: "website",
@@ -53,7 +53,7 @@ const jsonLd = {
   name: "AI Centrel — AI Innovation & Research | Zalo Clean",
   description:
     "Khám phá AI Centrel, sáng kiến nghiên cứu trí tuệ nhân tạo đa Agent, quy trình AI linh hoạt và công nghệ cộng tác thông minh.",
-  url: "https://zaloclean.raiboyvn.shop/innovation/ai-centrel/",
+  url: "https://zaloclean.com/innovation/ai-centrel/",
   breadcrumb: {
     "@type": "BreadcrumbList",
     itemListElement: [
@@ -61,19 +61,19 @@ const jsonLd = {
         "@type": "ListItem",
         position: 1,
         name: "Trang chủ",
-        item: "https://zaloclean.raiboyvn.shop/",
+        item: "https://zaloclean.com/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Innovation",
-        item: "https://zaloclean.raiboyvn.shop/innovation/ai-centrel/",
+        item: "https://zaloclean.com/innovation/ai-centrel/",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "AI Centrel",
-        item: "https://zaloclean.raiboyvn.shop/innovation/ai-centrel/",
+        item: "https://zaloclean.com/innovation/ai-centrel/",
       },
     ],
   },
