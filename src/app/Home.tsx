@@ -1021,9 +1021,9 @@ export default function Home() {
               </div>
               <ul className="space-y-2.5 text-body-sm">
                 <li><a className="hover:text-primary transition-colors" href="#security">Kiến trúc Offline Local</a></li>
-                <li><a className="hover:text-primary transition-colors" href="#features">Chính sách quyền riêng tư</a></li>
-                <li><a className="hover:text-primary transition-colors" href="#features">Điều khoản dịch vụ</a></li>
-                <li><a className="hover:text-primary transition-colors" href="#features">Tuyên bố miễn trừ</a></li>
+                <li><a className="hover:text-primary transition-colors" href="/privacy">Chính sách quyền riêng tư</a></li>
+                <li><a className="hover:text-primary transition-colors" href="/terms">Điều khoản dịch vụ</a></li>
+                <li><a className="hover:text-primary transition-colors" href="/disclaimer">Tuyên bố miễn trừ</a></li>
               </ul>
             </div>
 
