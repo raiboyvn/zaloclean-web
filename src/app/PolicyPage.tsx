@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 export default function PolicyPage({ title, children }: { title: string; children: ReactNode }) {
   return (
     <div className="min-h-screen bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed">
-      <header className="border-b border-outline-variant/40 bg-surface-container-lowest">
+      <header className="sticky top-0 z-50 border-b border-outline-variant/40 bg-surface-container-lowest/90 backdrop-blur-md transition-all duration-200">
         <div className="mx-auto flex max-w-[1280px] flex-wrap items-center justify-between gap-4 px-space-md py-4 md:px-margin-tablet lg:px-margin-desktop">
           <Link href="/" className="flex items-center gap-space-sm text-headline-sm font-bold">
             <Image src="/images/logo.png" alt="Zalo Clean" width={36} height={36} className="h-9 w-9 object-contain" />
