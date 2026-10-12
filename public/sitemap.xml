@@ -2,18 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://zaloclean.com/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-10-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://zaloclean.com/innovation/ai-centrel/</loc>
-    <lastmod>2026-10-09</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://zaloclean.com/download/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zaloclean.com/blog/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
-  <url><loc>https://zaloclean.com/download</loc></url>
-  <url><loc>https://zaloclean.com/privacy</loc></url>
-  <url><loc>https://zaloclean.com/terms</loc></url>
-  <url><loc>https://zaloclean.com/disclaimer</loc></url>
+  <url>
+    <loc>https://zaloclean.com/blog/zalo-pc-day-bo-nho-nguyen-nhan-cach-don-an-toan/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zaloclean.com/blog/cache-zalo-pc-la-gi-co-nen-xoa-khong/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zaloclean.com/blog/smartscreen-la-gi-cach-xu-ly-khi-tai-zalo-clean/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://zaloclean.com/blog/don-nhanh-va-don-an-toan-khac-nhau-the-nao/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url><loc>https://zaloclean.com/privacy/</loc></url>
+  <url><loc>https://zaloclean.com/terms/</loc></url>
+  <url><loc>https://zaloclean.com/disclaimer/</loc></url>
 </urlset>

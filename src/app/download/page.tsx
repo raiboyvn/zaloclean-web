@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "../components/Footer";
 
 const downloadHref =
   "https://github.com/raiboyvn/zaloclean-releases/releases/download/v1.0.0-beta.7/Zalo.Clean.Setup.1.0.0-beta.7.exe";
@@ -9,7 +10,16 @@ const installerName = "Zalo.Clean.Setup.1.0.0-beta.7.exe";
 export const metadata: Metadata = {
   title: "Tải Zalo Clean cho Windows — Cài đặt & hướng dẫn sử dụng",
   description: "Tải Zalo Clean beta.7 cho Windows 10/11 x64. Quét và xem trước miễn phí; hướng dẫn cài đặt, SmartScreen và lựa chọn phương thức dọn dữ liệu Zalo PC.",
-  alternates: { canonical: "https://zaloclean.com/download" },
+  alternates: { canonical: "https://zaloclean.com/download/" },
+  openGraph: {
+    title: "Tải Zalo Clean cho Windows — Cài đặt & hướng dẫn sử dụng",
+    description: "Tải Zalo Clean beta.7 cho Windows 10/11 x64. Quét và xem trước miễn phí; hướng dẫn cài đặt, SmartScreen và lựa chọn phương thức dọn dữ liệu Zalo PC.",
+    url: "https://zaloclean.com/download/",
+    siteName: "Zalo Clean",
+    locale: "vi_VN",
+    type: "website",
+    images: [{ url: "/images/og-cover.png", width: 1200, height: 630, alt: "Zalo Clean cho Windows" }],
+  },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
 };
 
@@ -19,9 +29,9 @@ const installationSteps = [
   { title: "Làm theo trình cài đặt", text: "Đọc các thông báo và làm theo hướng dẫn của bộ cài. Chờ quá trình cài đặt hoàn tất rồi mở Zalo Clean." },
 ];
 const usageSteps = [
-  { title: "Quét dữ liệu", text: "Mở Zalo Clean và bắt đầu quét để kiểm tra dữ liệu Zalo PC đang chiếm dung lượng trên máy." },
+  { title: "Quét dữ liệu", text: "Mở Zalo Clean và bắt đầu quét để kiểm tra dung lượng media và bộ nhớ cache Zalo PC trên máy." },
   { title: "Xem trước kết quả", text: "Xem kết quả quét và dung lượng ước tính. Quét và xem trước miễn phí giúp bạn kiểm tra trước khi quyết định dọn." },
-  { title: "Chọn dữ liệu cần dọn", text: "Chọn nhóm dữ liệu và mốc thời gian theo chức năng ứng dụng hỗ trợ. Kiểm tra kỹ và sao lưu những tệp quan trọng trước khi xác nhận." },
+  { title: "Chọn dữ liệu cần dọn", text: "Chọn nhóm dữ liệu (Ảnh, Video & Âm thanh) và mốc thời gian giữ lại. Kiểm tra kỹ trước khi xác nhận." },
   { title: "Chọn phương thức dọn", text: "Đọc sự khác nhau giữa Dọn an toàn và Dọn nhanh bên dưới. Dung lượng có thể giải phóng phụ thuộc dữ liệu được chọn và phương thức dọn." },
 ];
 const faqs = [
@@ -78,20 +88,68 @@ export default function DownloadPage() {
             </ol>
           </section>
 
-          <section id="smartscreen" className="scroll-mt-6 rounded-2xl border border-outline-variant/60 bg-surface-container-low p-5 md:p-8">
-            <p className="text-label-md font-bold uppercase tracking-wider text-primary">Lưu ý trước khi chạy</p>
-            <h2 className="mt-2 text-headline-lg font-bold">Nếu Windows hiện cảnh báo SmartScreen</h2>
-            <div className="mt-4 space-y-4 text-body-md leading-relaxed text-on-surface-variant">
-              <p>Một số máy có thể hiển thị <strong className="text-on-surface">Windows protected your PC</strong> và <strong className="text-on-surface">Don&apos;t run</strong>. Cảnh báo có thể xuất hiện với ứng dụng chưa ký số hoặc chưa có đủ uy tín tải xuống. Điều này không chứng minh ứng dụng an toàn.</p>
-              <ol className="list-decimal space-y-3 pl-5">
-                <li>Kiểm tra bạn tải từ nút chính thức trên <strong>zaloclean.com</strong>, dẫn tới GitHub Releases của dự án Zalo Clean. Không dùng bộ cài từ nguồn không rõ.</li>
-                <li>Đối chiếu tên file: <code className="break-all rounded bg-surface-container-lowest px-1.5 py-1 text-body-sm text-on-surface">{installerName}</code>. Tên file đúng là bước kiểm tra, không phải chứng nhận an toàn.</li>
-                <li>Chỉ khi nguồn tải đúng và bạn tin tưởng ứng dụng, chọn <strong>More info</strong> → <strong>Run anyway</strong>, nếu Windows cung cấp tùy chọn này. Nếu không chắc chắn, chọn <strong>Don&apos;t run</strong> và liên hệ hỗ trợ.</li>
-              </ol>
-              <p>Không tắt Defender hoặc SmartScreen để chạy bộ cài. Nếu Windows hoặc phần mềm bảo mật báo phát hiện mã độc, dừng chạy và liên hệ hỗ trợ; không bỏ qua cảnh báo đó. Nếu Windows không cung cấp tùy chọn chạy, không tìm cách vượt qua cơ chế chặn.</p>
-              <p>Zalo Clean hiện chưa có chữ ký số; không có tuyên bố Microsoft đã xác minh, chứng nhận hoặc ký ứng dụng.</p>
-              <p className="border-t border-outline-variant/40 pt-4 text-body-sm">Vị trí bổ sung ảnh SmartScreen thực tế sau: cảnh báo ban đầu và màn hình More info. Hiện hướng dẫn sử dụng chữ; chưa có ảnh chụp thực tế của bộ cài này.</p>
-              <a href="https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation" className="inline-block text-primary underline underline-offset-4">Tìm hiểu SmartScreen từ Microsoft</a>
+          <section id="smartscreen" className="scroll-mt-6 rounded-2xl border border-outline-variant/50 bg-surface-container-low p-5 sm:p-6 md:p-7 shadow-xs">
+            <div className="flex items-center gap-2 mb-1.5">
+              <span className="material-symbols-outlined text-primary text-[18px]">info</span>
+              <p className="text-xs font-bold uppercase tracking-wider text-primary">LƯU Ý KHI CÀI ĐẶT</p>
+            </div>
+            <h2 className="text-xl sm:text-2xl font-bold text-on-surface tracking-tight">Windows hiển thị cảnh báo SmartScreen?</h2>
+            <p className="mt-2 text-sm sm:text-base text-on-surface-variant leading-relaxed">
+              Zalo Clean hiện chưa có chữ ký số, vì vậy Windows có thể hiển thị cảnh báo khi mở bộ cài. Đây không nhất thiết là dấu hiệu ứng dụng không an toàn.
+            </p>
+            <ol className="mt-4 space-y-2.5 text-xs sm:text-sm text-on-surface-variant">
+              <li className="flex items-start gap-2.5">
+                <span className="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-bold text-primary mt-0.5">1</span>
+                <span>Đảm bảo bạn tải ứng dụng từ <strong className="text-on-surface">zaloclean.com</strong>.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-bold text-primary mt-0.5">2</span>
+                <span>Nếu tin tưởng nguồn tải, chọn <strong className="text-on-surface">More info</strong> → <strong className="text-on-surface">Run anyway</strong> khi Windows cho phép.</span>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <span className="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-bold text-primary mt-0.5">3</span>
+                <span>Nếu Windows hoặc phần mềm bảo mật báo phát hiện mã độc, không tiếp tục cài đặt.</span>
+              </li>
+            </ol>
+
+            {/* Minh họa trực quan thao tác SmartScreen */}
+            <div className="mt-6 mb-2">
+              <div className="hidden sm:block">
+                <Image
+                  src="/images/smartscreen-guide-desktop.svg"
+                  alt="Hình minh họa thao tác SmartScreen trên Windows: Bước 1 chọn More info, Bước 2 chọn Run anyway"
+                  width={820}
+                  height={280}
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+              <div className="block sm:hidden">
+                <Image
+                  src="/images/smartscreen-guide-mobile.svg"
+                  alt="Hình minh họa thao tác SmartScreen trên Windows: Bước 1 chọn More info, Bước 2 chọn Run anyway"
+                  width={360}
+                  height={450}
+                  className="w-full h-auto object-contain mx-auto max-w-[340px]"
+                />
+              </div>
+              <p className="text-center text-[11px] sm:text-xs text-on-surface-variant/70 mt-2 select-none">
+                Hình minh họa thao tác trên Windows
+              </p>
+            </div>
+            <div className="mt-5 pt-4 border-t border-outline-variant/30 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-xs sm:text-sm text-on-surface-variant">
+              <div className="flex items-center gap-1.5 font-medium text-outline">
+                <span className="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+                <span>Không cần tắt Windows Defender hay SmartScreen.</span>
+              </div>
+              <a
+                href="https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-primary hover:text-tertiary-container font-medium underline underline-offset-4"
+              >
+                <span>Tìm hiểu thêm từ Microsoft</span>
+                <span className="material-symbols-outlined text-[14px]">open_in_new</span>
+              </a>
             </div>
           </section>
 
@@ -137,14 +195,7 @@ export default function DownloadPage() {
           </section>
         </div>
       </main>
-      <footer className="border-t border-outline-variant/40 bg-surface-container">
-        <nav aria-label="Liên kết Zalo Clean" className="mx-auto flex max-w-4xl flex-wrap gap-x-6 gap-y-3 px-space-md py-6 text-body-sm text-on-surface-variant md:px-margin-tablet">
-          <Link href="/" className="hover:text-primary">Trang chủ</Link>
-          <Link href="/privacy" className="hover:text-primary">Chính sách quyền riêng tư</Link>
-          <Link href="/terms" className="hover:text-primary">Điều khoản sử dụng</Link>
-          <Link href="/disclaimer" className="hover:text-primary">Tuyên bố miễn trừ</Link>
-        </nav>
-      </footer>
+      <Footer />
     </div>
   );
 }

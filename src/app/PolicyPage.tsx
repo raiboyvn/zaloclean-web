@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
+import Footer from "./components/Footer";
 
 export default function PolicyPage({ title, children }: { title: string; children: ReactNode }) {
   return (
@@ -22,13 +23,7 @@ export default function PolicyPage({ title, children }: { title: string; childre
           {children}
         </article>
       </main>
-      <footer className="border-t border-outline-variant/40 bg-surface-container text-on-surface-variant">
-        <nav aria-label="Chính sách Zalo Clean" className="mx-auto flex max-w-3xl flex-wrap gap-x-6 gap-y-3 px-space-md py-6 text-body-sm md:px-margin-tablet">
-          <Link href="/privacy" className="hover:text-primary">Chính sách quyền riêng tư</Link>
-          <Link href="/terms" className="hover:text-primary">Điều khoản sử dụng</Link>
-          <Link href="/disclaimer" className="hover:text-primary">Tuyên bố miễn trừ</Link>
-        </nav>
-      </footer>
+      <Footer />
     </div>
   );
 }

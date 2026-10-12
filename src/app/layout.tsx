@@ -12,8 +12,20 @@ const beVietnamPro = Be_Vietnam_Pro({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://zaloclean.com"),
-  title: "404 — Không tìm thấy trang",
-  description: "Trang được yêu cầu không tồn tại.",
+  title: "Zalo Clean — Dọn Zalo PC gọn hơn, an toàn hơn",
+  description: "Tiện ích quét, xem trước và dọn dữ liệu Zalo PC trực tiếp trên máy tính Windows. Bảo vệ tin nhắn, giải phóng dung lượng ổ C.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-32x32.png", type: "image/png", sizes: "32x32" },
+      { url: "/favicon-16x16.png", type: "image/png", sizes: "16x16" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+  },
   robots: {
     index: false,
     follow: true,
@@ -32,6 +44,11 @@ export default function RootLayout({
   return (
     <html lang="vi" className={`${beVietnamPro.className} ${beVietnamPro.variable}`}>
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
