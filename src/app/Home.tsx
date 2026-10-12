@@ -193,7 +193,7 @@ export default function Home() {
           <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full bg-surface-container-lowest border border-outline-variant/40 shadow-xs mb-5 sm:mb-6 max-w-full">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse shrink-0"></span>
             <span className="text-[9.5px] sm:text-xs text-primary font-semibold tracking-tight sm:tracking-wider uppercase">
-              ZALO CLEAN DÀNH CHO WINDOWS • BẢN 1.0.0-beta.7
+              ZALO CLEAN DÀNH CHO WINDOWS • BẢN 1.0.0-beta.8
             </span>
           </div>
 

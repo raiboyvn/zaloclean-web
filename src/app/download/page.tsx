@@ -4,16 +4,16 @@ import Link from "next/link";
 import Footer from "../components/Footer";
 
 const downloadHref =
-  "https://github.com/raiboyvn/zaloclean-releases/releases/download/v1.0.0-beta.7/Zalo.Clean.Setup.1.0.0-beta.7.exe";
-const installerName = "Zalo.Clean.Setup.1.0.0-beta.7.exe";
+  "https://github.com/raiboyvn/zaloclean-releases/releases/download/v1.0.0-beta.8/Zalo.Clean.Setup.1.0.0-beta.8.exe";
+const installerName = "Zalo.Clean.Setup.1.0.0-beta.8.exe";
 
 export const metadata: Metadata = {
   title: "Tải Zalo Clean cho Windows — Cài đặt & hướng dẫn sử dụng",
-  description: "Tải Zalo Clean beta.7 cho Windows 10/11 x64. Quét và xem trước miễn phí; hướng dẫn cài đặt, SmartScreen và lựa chọn phương thức dọn dữ liệu Zalo PC.",
+  description: "Tải Zalo Clean beta.8 cho Windows 10/11 x64. Quét và xem trước miễn phí; hướng dẫn cài đặt, SmartScreen và lựa chọn phương thức dọn dữ liệu Zalo PC.",
   alternates: { canonical: "https://zaloclean.com/download/" },
   openGraph: {
     title: "Tải Zalo Clean cho Windows — Cài đặt & hướng dẫn sử dụng",
-    description: "Tải Zalo Clean beta.7 cho Windows 10/11 x64. Quét và xem trước miễn phí; hướng dẫn cài đặt, SmartScreen và lựa chọn phương thức dọn dữ liệu Zalo PC.",
+    description: "Tải Zalo Clean beta.8 cho Windows 10/11 x64. Quét và xem trước miễn phí; hướng dẫn cài đặt, SmartScreen và lựa chọn phương thức dọn dữ liệu Zalo PC.",
     url: "https://zaloclean.com/download/",
     siteName: "Zalo Clean",
     locale: "vi_VN",
@@ -57,12 +57,12 @@ export default function DownloadPage() {
       <main>
         <section className="border-b border-outline-variant/30 bg-surface-container-low px-space-md py-12 md:px-margin-tablet md:py-16">
           <div className="mx-auto max-w-4xl">
-            <p className="mb-4 text-label-md font-bold uppercase tracking-wider text-primary">Zalo Clean · Windows · 1.0.0-beta.7</p>
+            <p className="mb-4 text-label-md font-bold uppercase tracking-wider text-primary">Zalo Clean · Windows · 1.0.0-beta.8</p>
             <h1 className="text-headline-xl-mobile font-bold tracking-tight md:text-display-hero">Tải Zalo Clean cho Windows</h1>
             <p className="mt-5 max-w-2xl text-body-lg leading-relaxed text-on-surface-variant">Quét và xem trước dữ liệu Zalo PC miễn phí. Kiểm tra kết quả, chọn phạm vi cần dọn và làm theo hướng dẫn trước khi xác nhận.</p>
             <div className="mt-7 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
               <a href={downloadHref} className="inline-flex w-full items-center justify-center rounded-lg bg-primary px-6 py-4 text-label-lg font-semibold text-on-primary shadow-sm transition-colors hover:bg-tertiary-container sm:w-auto">Tải Zalo Clean cho Windows x64</a>
-              <span className="text-body-sm text-on-surface-variant">Windows 10/11 · 64-bit · beta.7</span>
+              <span className="text-body-sm text-on-surface-variant">Windows 10/11 · 64-bit · beta.8</span>
             </div>
             <p className="mt-4 text-body-sm text-on-surface-variant">Bản thử nghiệm. Ứng dụng hiện chưa có chữ ký số; hãy đọc hướng dẫn SmartScreen trước khi mở bộ cài.</p>
             <nav aria-label="Hướng dẫn tải và sử dụng" className="mt-7 flex flex-wrap gap-x-6 gap-y-3 text-body-sm font-semibold text-primary">
