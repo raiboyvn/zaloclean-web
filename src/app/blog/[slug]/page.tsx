@@ -64,6 +64,37 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
+function renderTextWithLinks(text: string) {
+  const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  if (!linkRegex.test(text)) {
+    return text;
+  }
+  linkRegex.lastIndex = 0;
+  const parts: (string | React.ReactNode)[] = [];
+  let lastIndex = 0;
+  let match;
+  while ((match = linkRegex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.substring(lastIndex, match.index));
+    }
+    const [, label, url] = match;
+    parts.push(
+      <Link
+        key={match.index}
+        href={url}
+        className="font-semibold text-primary hover:underline"
+      >
+        {label}
+      </Link>
+    );
+    lastIndex = linkRegex.lastIndex;
+  }
+  if (lastIndex < text.length) {
+    parts.push(text.substring(lastIndex));
+  }
+  return parts;
+}
+
 export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params;
   const post = getPostBySlug(slug);
@@ -235,7 +266,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
               {section.paragraphs.map((p, pIdx) => (
                 <p key={pIdx} className="leading-relaxed">
-                  {p}
+                  {renderTextWithLinks(p)}
                 </p>
               ))}
 
@@ -243,7 +274,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                 <ul className="space-y-2 list-disc list-inside pl-1 text-on-surface">
                   {section.list.map((item, lIdx) => (
                     <li key={lIdx} className="leading-relaxed">
-                      <span>{item}</span>
+                      <span>{renderTextWithLinks(item)}</span>
                     </li>
                   ))}
                 </ul>
@@ -265,7 +296,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                     >
                       {section.callout.type === "warning" ? "warning" : "info"}
                     </span>
-                    <span>{section.callout.text}</span>
+                    <span>{renderTextWithLinks(section.callout.text)}</span>
                   </div>
                 </div>
               )}

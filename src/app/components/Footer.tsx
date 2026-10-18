@@ -34,6 +34,13 @@ export default function Footer() {
             <div className="text-xs font-bold text-on-surface uppercase tracking-wider mb-4">
               Hỗ trợ khách hàng
             </div>
+            <ul className="space-y-2.5 text-xs sm:text-sm text-left mb-3">
+              <li>
+                <Link className="hover:text-primary transition-colors" href="/blog">
+                  Blog hướng dẫn
+                </Link>
+              </li>
+            </ul>
             <div className="text-xs sm:text-sm text-left">
               <a
                 className="font-semibold text-primary hover:underline break-all inline-flex items-center gap-1.5"

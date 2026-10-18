@@ -2,14 +2,16 @@ import type { Metadata } from "next";
 import Home from "./Home";
 
 export const metadata: Metadata = {
-  title: "Zalo Clean — Dọn Zalo PC gọn hơn, an toàn hơn",
-  description: "Tiện ích quét, xem trước và dọn dữ liệu Zalo PC trực tiếp trên máy tính Windows. Bảo vệ tin nhắn, giải phóng dung lượng ổ C.",
+  title: "Zalo Clean — Phần mềm dọn dẹp Zalo PC, giải phóng dung lượng ổ C",
+  description:
+    "Tiện ích quét, xem trước và dọn dẹp dữ liệu Zalo PC trực tiếp trên máy tính Windows. Dọn dung lượng Zalo máy tính và giải phóng ổ C an toàn.",
   alternates: {
     canonical: "https://zaloclean.com/",
   },
   openGraph: {
-    title: "Zalo Clean — Dọn Zalo PC gọn hơn, an toàn hơn",
-    description: "Tiện ích quét, xem trước và dọn dữ liệu Zalo PC trực tiếp trên máy tính Windows. Bản quyền trọn đời chỉ từ 29.000đ.",
+    title: "Zalo Clean — Phần mềm dọn dẹp Zalo PC, giải phóng dung lượng ổ C",
+    description:
+      "Tiện ích quét, xem trước và dọn dẹp dữ liệu Zalo PC trực tiếp trên máy tính Windows. Dọn dung lượng Zalo máy tính và giải phóng ổ C an toàn.",
     url: "https://zaloclean.com/",
     siteName: "Zalo Clean",
     locale: "vi_VN",
@@ -25,8 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zalo Clean — Dọn Zalo PC gọn hơn, an toàn hơn",
-    description: "Quét và dọn dữ liệu Zalo PC trực tiếp trên máy tính Windows an toàn.",
+    title: "Zalo Clean — Phần mềm dọn dẹp Zalo PC, giải phóng dung lượng ổ C",
+    description:
+      "Tiện ích quét, xem trước và dọn dẹp dữ liệu Zalo PC trực tiếp trên máy tính Windows. Dọn dung lượng Zalo máy tính và giải phóng ổ C an toàn.",
     images: ["/images/og-cover.png"],
   },
   robots: {

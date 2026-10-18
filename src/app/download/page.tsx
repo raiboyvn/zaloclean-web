@@ -8,12 +8,14 @@ const downloadHref =
 const installerName = "Zalo.Clean.Setup.1.0.0-beta.8.exe";
 
 export const metadata: Metadata = {
-  title: "Tải Zalo Clean cho Windows — Cài đặt & hướng dẫn sử dụng",
-  description: "Tải Zalo Clean beta.8 cho Windows 10/11 x64. Quét và xem trước miễn phí; hướng dẫn cài đặt, SmartScreen và lựa chọn phương thức dọn dữ liệu Zalo PC.",
+  title: "Tải Zalo Clean cho Windows — Phần mềm dọn dẹp Zalo PC an toàn",
+  description:
+    "Tải Zalo Clean cho Windows 10/11 x64. Phần mềm dọn dẹp Zalo PC, hỗ trợ quét và xem trước miễn phí, dọn dung lượng Zalo máy tính và giải phóng ổ C an toàn.",
   alternates: { canonical: "https://zaloclean.com/download/" },
   openGraph: {
-    title: "Tải Zalo Clean cho Windows — Cài đặt & hướng dẫn sử dụng",
-    description: "Tải Zalo Clean beta.8 cho Windows 10/11 x64. Quét và xem trước miễn phí; hướng dẫn cài đặt, SmartScreen và lựa chọn phương thức dọn dữ liệu Zalo PC.",
+    title: "Tải Zalo Clean cho Windows — Phần mềm dọn dẹp Zalo PC an toàn",
+    description:
+      "Tải Zalo Clean cho Windows 10/11 x64. Phần mềm dọn dẹp Zalo PC, hỗ trợ quét và xem trước miễn phí, dọn dung lượng Zalo máy tính và giải phóng ổ C an toàn.",
     url: "https://zaloclean.com/download/",
     siteName: "Zalo Clean",
     locale: "vi_VN",
